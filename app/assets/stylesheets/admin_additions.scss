@@ -1,0 +1,27 @@
+// body {
+// 	background: pink;
+// }
+
+
+#header, #main, #footer {
+
+	padding: 40px 0;
+}
+
+#header, #footer {
+	text-align: center;
+	color: white;
+}
+
+#header {
+	background: red;
+}
+
+#footer {
+	background: #ff00aa;
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;	
+}

@@ -1,0 +1,16 @@
+<h1>My full form</h1>
+
+<div class="Demo form">
+	<%= form_for(@subject, html: {multipart: true}) do |f| %>
+		<%= f.label(:name) %>
+		<%= f.text_field(:name, :size => 40, :maxlength => 40) %>
+		<%= f.password_field(:password, :size => 40) %>
+		<%= f.hidden_field(:token, 'abcdef0123456789') %>
+		<%= f.text_area(:description, :size => "40x5") %>
+
+		<%= f.radio_button(:content_type, 'text') %>
+		<%= f.radio_button(:content_type, 'HTML') %>
+		<%= f.check_box(:visible) %>
+		<%= f.file_field(:logo) %>
+	<% end %>
+</div>
